@@ -32,16 +32,24 @@ Execute this commands
 
 ```shell script
 docker exec app-invest-php-fpm php composer.phar install
+```
+
+```shell script
 docker exec app-invest-php-fpm php artisan db:seed
 ```
+
 
 ------
 ### Working routine
 ```shell script
 docker-compose up -d
 ```
-------
 
+------
+### Access Frontend
+```shell script
+http://localhost:8081
+```
 
 ------
 ### Execute tests
@@ -49,3 +57,12 @@ docker-compose up -d
 docker exec app-invest-php-fpm php artisan test
 ```
 ------
+
+------
+### View API docs
+```shell script
+http://localhost:8007/docs/api
+```
+------
+
+
