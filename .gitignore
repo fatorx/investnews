@@ -1,0 +1,6 @@
+temp
+data/*
+.idea
+.env
+api/.env
+*.tar.gz

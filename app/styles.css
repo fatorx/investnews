@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+header nav {
+    display: flex;
+    gap: 20px;
+}
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+header .search {
+    display: flex;
+    align-items: center;
+}
+header .search input, header .search select {
+    padding: 5px;
+    margin-right: 10px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+}
+.noticia {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+.noticia h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.noticia p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.noticia button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e0e0e0;
+}
+#newsDetails {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 640px;
+    height: 343px;
+    border: 1px solid #CCC;
+}
+
+#newsDetails h2, #newsDetails p {
+    margin: 10px 0;
+}
+#categoryForm, #newsForm {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 300px;
+}
+#categoryForm input, #newsForm input, #newsForm textarea, #newsForm select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
